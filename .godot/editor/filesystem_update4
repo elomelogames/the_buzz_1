@@ -3,12 +3,12 @@ res://Player.tscn
 res://Enemy.tscn
 res://close_light.tscn
 res://fuse_box.tscn
-res://inventory/fuse_icon.tscn
-res://boat.tscn
-res://safe_zone.tscn
-res://DayNightCycle.gd
 res://house.tscn
 res://sound_door.tscn
-res://portal.gd
 res://portal.tscn
+res://padlock_item.tscn
+res://Enemy.gd
+res://Player.gd
+res://portal.gd
 res://GameScene.gd
+res://portal_exit.tscn

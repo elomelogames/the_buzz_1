@@ -1,9 +1,9 @@
+StaticBody3D
 CollisionShape3D
-Area3D
 MeshInstance3D
+Area3D
 NavigationLink3D
 NavigationRegion3D
-StaticBody3D
 NavigationObstacle3D
 Timer
 PathFollow3D

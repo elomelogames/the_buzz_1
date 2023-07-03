@@ -16,6 +16,6 @@ dest_files=["res://.godot/imported/1.obj-041acd56c38eeb38b960bd6a934ab0e6.mesh",
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3(5, 5, 5)
+scale_mesh=Vector3(20, 20, 20)
 offset_mesh=Vector3(0, 0, 0)
 optimize_mesh=true

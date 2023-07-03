@@ -73,7 +73,7 @@ run={
 
 [navigation]
 
-3d/default_edge_connection_margin=10.0
+3d/default_edge_connection_margin=2.0
 
 [rendering]
 

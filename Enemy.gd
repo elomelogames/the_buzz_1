@@ -22,7 +22,6 @@ func switch_mode(mode_selected:int, path: PathFollow3D):
 
 func update_target_location(target_location):
 	nav_agent.set_target_position(target_location)
-	print (target_location)
 	my_target = target_location
 	
 

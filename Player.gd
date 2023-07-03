@@ -263,7 +263,7 @@ func _physics_process(delta):
 		if can_play_walking:
 			can_play_walking = false
 			can_play_stopping = true
-			print ("should play walk")
+#			print ("should play walk")
 			if move_speed == walk_speed:
 				%footsteps.play()
 				%runsteps.stop()
@@ -277,7 +277,7 @@ func _physics_process(delta):
 #			print ("foot sound")
 	else:
 		if can_play_stopping:
-			print ("should stop walk")
+#			print ("should stop walk")
 			can_play_stopping = false
 			can_play_walking = true
 #			if move_speed == walk_speed:
