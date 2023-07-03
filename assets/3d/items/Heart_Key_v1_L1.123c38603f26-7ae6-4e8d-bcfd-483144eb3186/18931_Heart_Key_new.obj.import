@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://daxl0cypiec5k"
+path="res://.godot/imported/18931_Heart_Key_new.obj-ca4d3a23f899a27d9611b2b1d2572ef1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/18931_Heart_Key_new.obj-ca4d3a23f899a27d9611b2b1d2572ef1.mesh"]
+
+source_file="res://assets/3d/items/Heart_Key_v1_L1.123c38603f26-7ae6-4e8d-bcfd-483144eb3186/18931_Heart_Key_new.obj"
+dest_files=["res://.godot/imported/18931_Heart_Key_new.obj-ca4d3a23f899a27d9611b2b1d2572ef1.mesh", "res://.godot/imported/18931_Heart_Key_new.obj-ca4d3a23f899a27d9611b2b1d2572ef1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
