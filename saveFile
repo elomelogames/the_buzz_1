@@ -1,0 +1,8 @@
+{"disabled":false,"filepath":"/root/Main/LeftOar","freeze":true,"in_tree":true,"visible":true,"xPos":-253.575775146484,"yPos":46.1654891967773,"zPos":-94.8914108276367}
+{"filepath":"/root/Main/BoatKey","was_picked_up":true,"xPos":160.186218261719,"yPos":14.9768886566162,"zPos":-575.022033691406}
+{"can_flash":true,"filepath":"/root/Main/CloseLight"}
+{"disabled":false,"filepath":"/root/Main/RightOar","freeze":false,"in_tree":false,"visible":true,"xPos":295.055236816406,"yPos":6.35009860992432,"zPos":250.190994262695}
+{"filepath":"/root/Main/Boat","required_objects":["LeftOar","RightOar","BoatKey"]}
+{"filepath":"/root/Main/Fuse","was_picked_up":true,"xPos":-267.045776367188,"yPos":31.1133880615234,"zPos":-687.184997558594}
+{"carried_inventory":[],"filepath":"/root/Main/Player","xPos":123.986488342285,"yPos":24.7385597229004,"zPos":-340.319061279297}
+{"activated":true,"filepath":"/root/Main/FuseBox"}

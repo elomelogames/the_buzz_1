@@ -1,3 +1,8 @@
+Timer
+RayCast3D
+PathFollow3D
+Path3D
+Button
 StaticBody3D
 CollisionShape3D
 MeshInstance3D
@@ -5,9 +10,6 @@ Area3D
 NavigationLink3D
 NavigationRegion3D
 NavigationObstacle3D
-Timer
-PathFollow3D
-Path3D
 TextureRect
 AnimationPlayer
 SpotLight3D
@@ -28,5 +30,3 @@ Label
 Container
 Control
 Marker3D
-RayCast3D
-ColorRect

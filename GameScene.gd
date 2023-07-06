@@ -14,3 +14,11 @@ func show_padlock():
 
 func hide_padlock():
 	player.hide_mouse()
+
+
+func _on_save_btn_pressed():
+	SaveLoad.save()
+
+
+func _on_load_btn_pressed():
+	SaveLoad.load()

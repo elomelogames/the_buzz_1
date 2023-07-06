@@ -17,7 +17,8 @@ func carried_state(state:bool):
 		my_drop_object.required_objects.erase(str(name))
 		print (my_drop_object.required_objects)
 		my_drop_object.check_required_objects()
-		queue_free()
+		visible = false
+		%PlankColl.disabled = true
 		
 
 
@@ -30,3 +31,28 @@ func _on_plank_area_body_entered(body):
 	if in_tree and body.name == "Stone":
 		freeze = false
 		in_tree = false
+
+
+func saveObject() -> Dictionary:
+	var dict := {
+		"filepath": get_path(),
+		"xPos": global_position.x,
+		"yPos": global_position.y,
+		"zPos": global_position.z,
+		"in_tree": in_tree,
+		"freeze": freeze,
+		"visible": visible,
+		"disabled":%PlankColl.disabled
+		
+	}
+	return dict
+	
+func loadObject(loadedDict: Dictionary) -> void:
+	in_tree = loadedDict.in_tree
+	freeze = loadedDict.freeze
+	visible = loadedDict.visible
+	%PlankColl.disabled = loadedDict.disabled
+	global_position.x = loadedDict.xPos
+	global_position.y = loadedDict.yPos
+	global_position.z = loadedDict.zPos
+

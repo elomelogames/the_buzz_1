@@ -38,3 +38,18 @@ func check_required_objects():
 func move_boat():
 	var tween = get_tree().create_tween()
 	tween.tween_property(self, "position", Vector3(-100, 0, 150), 30)
+
+
+
+func saveObject() -> Dictionary:
+	var dict := {
+		"filepath": get_path(),
+		"required_objects": required_objects,
+
+		
+	}
+	return dict
+	
+func loadObject(loadedDict: Dictionary) -> void:
+	required_objects = loadedDict.required_objects
+	print ("remaining obkects "+str(required_objects))

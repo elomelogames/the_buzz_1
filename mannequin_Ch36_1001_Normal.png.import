@@ -3,33 +3,34 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b15uaouf1k5nd"
-path="res://.godot/imported/mannequin_Ch36_1001_Normal.png-7036ac0068cfa6099bf774340d7a7842.ctex"
+path.s3tc="res://.godot/imported/mannequin_Ch36_1001_Normal.png-6c0b66e9b77609bda2decfe0edd9a1a8.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={}
 
 [deps]
 
-source_file="res:///mannequin_Ch36_1001_Normal.png"
-dest_files=["res://.godot/imported/mannequin_Ch36_1001_Normal.png-7036ac0068cfa6099bf774340d7a7842.ctex"]
+source_file="res://mannequin_Ch36_1001_Normal.png"
+dest_files=["res://.godot/imported/mannequin_Ch36_1001_Normal.png-6c0b66e9b77609bda2decfe0edd9a1a8.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://mannequin_Ch36_1001_Normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

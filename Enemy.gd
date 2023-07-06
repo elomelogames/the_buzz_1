@@ -7,9 +7,17 @@ var modes: Array = ["follow", "patrol"]
 
 var current_mode:int = 0
 
-var speed: float = 2.0
+var current_map: String =""
+
+var speed: float = 4.0
 
 var my_target: Vector3
+
+@export var map1: PathFollow3D
+@export var map2: PathFollow3D
+@export var map3: PathFollow3D
+@export var map4: PathFollow3D
+
 
 func switch_mode(mode_selected:int, path: PathFollow3D):
 	current_mode = mode_selected
@@ -40,8 +48,7 @@ func _physics_process(delta):
 
 
 func _on_switch_timer_timeout():
-	pass
-#	switch_mode(1, get_node("/root/Main/Path1/Path1Follow"))
+	switch_mode(1, get_node("/root/Main/Nav4Path/Nav4PathFollow"))
 
 
 func _on_navigation_agent_3d_velocity_computed(safe_velocity):
@@ -49,3 +56,19 @@ func _on_navigation_agent_3d_velocity_computed(safe_velocity):
 	velocity = safe_velocity
 #	print ("safe move "+str(velocity))		
 	move_and_slide()
+
+
+func snap_tp_path(map: String):
+	if map == current_map:
+		return
+	current_map = map
+	print ("snap to map "+current_map)
+	match current_map:
+		"Map1":
+			switch_mode(1, map1)
+		"Map2":
+			switch_mode(1, map2)
+		"Map3":
+			switch_mode(1, map3)
+		"Map4":
+			switch_mode(1, map4)

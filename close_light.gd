@@ -36,3 +36,16 @@ func flash_code():
 	await %CloseLightAnim.animation_finished
 	if can_flash:
 		flash_code()
+
+
+func saveObject() -> Dictionary:
+	var dict := {
+		"filepath": get_path(),
+		"can_flash": can_flash
+	
+	}
+	return dict
+	
+func loadObject(loadedDict: Dictionary) -> void:
+	can_flash = loadedDict.can_flash
+	activated(can_flash)

@@ -319,10 +319,10 @@ func _clicked_static(item):
 	if item.name == "DoorCol":
 		get_node("/root/Main/House").change_door()
 	if item.name == "BoatKey":
-		item.queue_free()
+		item.picked_up(true)
 		add_to_carried_inventory("boat_key")
 	if item.name == "Fuse":
-		item.queue_free()
+		item.picked_up(true)
 		add_to_carried_inventory("fuse")
 	if item.name == "FuseBox":
 		if carried_inventory.has("fuse"):
@@ -348,3 +348,32 @@ func _on_timer_timeout():
 
 func _on_throw_timer_timeout():
 	can_drop = true
+	
+
+func saveObject() -> Dictionary:
+	var dict := {
+		"filepath": get_path(),
+		"xPos": global_position.x,
+		"yPos": global_position.y,
+		"zPos": global_position.z,
+		"carried_inventory": carried_inventory
+	}
+	return dict
+	
+func loadObject(loadedDict: Dictionary) -> void:
+	global_position.x = loadedDict.xPos
+	global_position.y = loadedDict.yPos
+	global_position.z = loadedDict.zPos
+	var loaded_inventory = loadedDict.carried_inventory
+	print ("carrying .. "+str(carried_inventory.size()))
+	for item in loaded_inventory:
+		print ("load to carried inv..."+item)
+		add_to_carried_inventory(item)
+
+
+func _on_map_checker_timeout():
+	if %MapCheckCast == null:
+		return	
+	var collider = %MapCheckCast.get_collider()
+	buzz.snap_tp_path(collider.name)
+	
